@@ -29,7 +29,7 @@ function calcBMI() {
         unit =document.getElementById("bmi-metric").checked, //true = metric, false = imperial
         weight = parseInt(document.getElementById("bmi-weight").value),
         height = parseInt(document.getElementById("bmi-height").value),
-        results = document.getElementById("bmi-results");
+        results = document.getElementById("results");
 
     //(B) Calculate BMI
     //Metric BMI = mass (kg) / height (m) square
@@ -39,7 +39,7 @@ function calcBMI() {
     } else {
         bmi = 703 * (weight / (height * height));
     }
-    bmi = Math.roud(bmi * 100) /100; //round off 2 decimal places
+    bmi = Math.round(bmi * 100) /100; //round off 2 decimal places
 
     //(C) Show Your Results
     if (bmi < 18.5){
@@ -53,7 +53,7 @@ function calcBMI() {
     }else if(bmi < 40){
         results.innerHTML = bmi + " - Obesity class II";
     }else {
-        results.innerHTML = bmi + " - Obesity class III";
+        console.log(results.innerHTML = bmi + " - Obesity class III");
     }
     return false;
 }
