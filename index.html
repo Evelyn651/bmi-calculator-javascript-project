@@ -5,6 +5,8 @@
     <title>
         Simple BMI Calculator
     </title>
+    <link rel="stylesheet" href="bmi-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
 <form onsubmit="return calcBMI();">
@@ -17,23 +19,30 @@
     </label>
     <br><br>
 
+    <span class="input-label">
     Weight:
+        </span>
     <label>
-    <input id="bmi-weight" type="number" min="1" max="635" required/>
-    <span id="bmi-weight-unit"> KG </span>
+        <input id="bmi-weight" type="number" min="1" max="635" required/>
+        <span id="bmi-weight-unit"> KG </span>
     </label>
     <br><br>
 
+    <span class="input-label">
     Height:
+    </span>
     <label>
-    <input id="bmi-height" type="number" min="54" max="272" required/>
-    <span id="bmi-height-unit">CM</span>
+        <input id="bmi-height" type="number" min="54" max="272" required/>
+        <span id="bmi-height-unit">CM</span>
     </label>
     <br><br>
 
-    <input type="submit" value="Calculate BMI"/>
+    <input id="submit-button" type="submit" value="Calculate BMI"/>
+    <span class="input-label">
+    Results:
+    </span>
     <div id="results">
-        Results:
+
     </div>
 </form>
 <script src="2-bmi.js"></script>

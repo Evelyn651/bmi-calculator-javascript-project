@@ -1,0 +1,21 @@
+*{
+    background-color: #EAD2AC;
+    font-family: 'Poppins', sans-serif;
+    color: #4281A4;
+}
+
+#bmi-weight, #bmi-height{
+    width: 80px;
+    background-color: ghostwhite;
+}
+
+.input-label{
+    text-decoration: underline;
+    text-decoration-color: #4281A4;
+}
+
+#submit-button{
+    background-color: #9CAFB7;
+    color: ghostwhite;
+    width: 150px;
+}
